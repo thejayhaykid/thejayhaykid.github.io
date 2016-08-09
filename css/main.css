@@ -1,0 +1,10 @@
+﻿body
+{
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    background-image: url('/images/background.bmp');
+    background-size: cover;
+}
