@@ -6,7 +6,7 @@
 .jumbotron {
     display: flex;
     align-items: center;
-    background-image: url('/images/background.bmp');
+    background-image: url('/images/background.png');
     background-size: cover;
 }
 
