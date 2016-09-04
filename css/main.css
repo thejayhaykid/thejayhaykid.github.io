@@ -5,6 +5,10 @@
 
 .jumbotron {
     display: flex;
+    margin: auto;
+    padding: 0 15px;
+    width: 90%;
+    height: 1024px;
     align-items: center;
     background-image: url('/images/Landscape1.png');
     background-size: cover;
