@@ -8,7 +8,6 @@
   border: 1px solid #fff;
 }
 
-
 /*
  * Base structure
  */
@@ -20,7 +19,6 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-
 }
 
 body {
@@ -134,12 +132,6 @@ body {
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
-}
-footer p{
-  float: left;
-  margin-top: 10px;
-  margin-right: 10px;
-  text-align: left;
 }
 
 
