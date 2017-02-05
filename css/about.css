@@ -8,6 +8,11 @@
   border: 1px solid #fff;
 }
 
+.img-circle{
+  width: 10%;
+  height: auto;
+  margin:auto;
+}
 
 /*
  * Base structure
