@@ -12,6 +12,12 @@
  * Base structure
  */
 
+ /*
+  * Jumbotron
+  */
+.jumbotron{
+  background-image: url(images/RuleOfThirdsEdit.jpg) no-repeat center center;
+}
 html,
 body {
   height: 100%;
