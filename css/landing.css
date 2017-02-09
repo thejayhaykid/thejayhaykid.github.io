@@ -15,10 +15,7 @@
  /*
   * Jumbotron
   */
-.jumbotron{
-  background-image: url(../images/RuleOfThirdsEdit.jpg) no-repeat center center;
-  background-size: cover;
-}
+
 html,
 body {
   height: 100%;
