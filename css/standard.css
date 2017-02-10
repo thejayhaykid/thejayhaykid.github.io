@@ -12,6 +12,22 @@
 /*
  * Base structure
  */
+ a:link{
+   color: #fff;
+   text-decoration: underline;
+ }
+
+ a:visited{
+   color: #ddd;
+ }
+
+ a:hover{
+   color: #aaa;
+ }
+
+ a:active {
+   color: #3CC73C;
+ }
 
 html,
 body {
