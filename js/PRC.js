@@ -16,7 +16,7 @@ function fillVars(){
 function calculate() {
     console.log("entered calculate");
     fillVars();
-    console.log(comp);
+    console.log("comp = " + comp);
     var ncaa = 0, nfl = 0;
     ncaa = ((8.4 * yar) + (330 * tds) + (100 * comp) - (200 * ints)) / (att);
     var a, b, c, d;
@@ -27,8 +27,8 @@ function calculate() {
     nfl = ((a + b + c + d) / 6) * 100;
     var ncaa1 = ncaa.toString();
     var nfl1 = nfl.toString();
-    document.getElementById("NCAA").innerHTML = 'NCAA: ' + ncaa1;
-    document.getElementById("NFL").innerHTML = 'NFL:  ' + nfl1;
+    $("#NCAA").innerHTML = "NCAA: " + ncaa1;
+    document.getElementById("NFL").innerHTML = "NFL:  " + nfl1;
 }
 
 $("#myBtn").click(calculate());
