@@ -12,6 +12,7 @@
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="css/standard.css" rel="stylesheet">
+    <link href="css/PRC.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,11 +61,11 @@
       <h1>Passer Rating calculator!</h1>
   <p>Please enter in the correct information below in order for your passer rating to be calculated:</p>
   <form id="form">
-    <p>Completions: <input type="text" name="completions" ID="CompID"></p>
-    <p>Attempts: <input type="text" name="completions" ID="AttID"></p>
-    <p>Yards: <input type="text" name="completions" ID="YarID"></p>
-    <p>Touchdowns: <input type="text" name="completions" ID="TDID"></p>
-    <p>Interceptions: <input type="text" name="completions" ID="IntID"></p>
+    <p>Completions: <input class="box" type="text" name="completions" ID="CompID"></p>
+    <p>Attempts: <input class="box" type="text" name="completions" ID="AttID"></p>
+    <p>Yards: <input class="box" type="text" name="completions" ID="YarID"></p>
+    <p>Touchdowns: <input class="box" type="text" name="completions" ID="TDID"></p>
+    <p>Interceptions: <input class="box" type="text" name="completions" ID="IntID"></p>
     <button class="myButton" name="calculate" type="button" ID="myBtn">Calculate</button>
   </form>
 
@@ -76,5 +77,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- JavaScript for the page. -->
+    <script src="js/PRC.js"></script>
   </body>
 </html>
