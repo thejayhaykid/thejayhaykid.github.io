@@ -28,7 +28,7 @@ function calculate() {
     var ncaa1 = ncaa.toString();
     var nfl1 = nfl.toString();
     $("#NCAA").innerHTML = "NCAA: " + ncaa1;
-    document.getElementById("NFL").innerHTML = "NFL:  " + nfl1;
+    $("#NFL").innerHTML = "NFL:  " + nfl1;
 }
 
 $("#myBtn").click(calculate());
