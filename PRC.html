@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Jake Hayes</title>
-    <link rel="icon" href="images/PersonalLogo2-02.ico" type="image/x-icon">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Passer Rating Calculator - Jake Hayes</title>
+  <link rel="icon" href="images/PersonalLogo2-02.ico" type="image/x-icon">
 
-    <!-- Bootstrap -->
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="css/standard.css" rel="stylesheet">
-    <link href="css/PRC.css" rel="stylesheet">
+  <link href="css/standard.css" rel="stylesheet">
+  <link href="css/PRC.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -35,49 +35,57 @@
           </button>
           <a class="navbar-brand">Jake Hayes</a>
         </div>
+
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="landing.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="index.html">Landing</a></li>
-            <li class="dropdown">
-              <a href="http://getbootstrap.com/examples/navbar-fixed-top/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+            <li class="dropdown"> <a href="http://getbootstrap.com/examples/navbar-fixed-top/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More
+              <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="design.html">Design</a></li>
                 <li><a href="programming.html">Programming</a></li>
                 <li><a href="art.html">Miscellaneous</a></li>
-            </ul>
-          </li>
+              </ul>
+            </li>
           </ul>
+
           <ul class="nav navbar-nav navbar-right">
             <li><a href="mailto:jakejhayes@gmail.com">Email</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
+        <!--/.nav-collapse -->
       </div>
     </nav>
 
     <!--Main Part of the page-->
     <div class="container">
       <h1>Passer Rating calculator!</h1>
-  <p>Please enter in the correct information below in order for your passer rating to be calculated:</p>
-  <form id="form">
-    <p>Completions: <input class="box" type="text" name="completions" ID="CompID"></p>
-    <p>Attempts: <input class="box" type="text" name="completions" ID="AttID"></p>
-    <p>Yards: <input class="box" type="text" name="completions" ID="YarID"></p>
-    <p>Touchdowns: <input class="box" type="text" name="completions" ID="TDID"></p>
-    <p>Interceptions: <input class="box" type="text" name="completions" ID="IntID"></p>
-    <button class="myButton" name="calculate" type="button" ID="myBtn">Calculate</button>
-  </form>
+      <p>Please enter in the correct information below in order for your passer rating to be calculated:</p>
+    </div>
 
-  <p id="NCAA">NCAA: </p>
-  <p id="NFL">NFL:  </p>
+    <div class="container">
+      <form id="form">
+        <p>Completions: <input class="box" type="text" name="completions" id="CompID"></p>
+        <p>Attempts: <input class="box" type="text" name="completions" id="AttID"></p>
+        <p>Yards: <input class="box" type="text" name="completions" id="YarID"></p>
+        <p>Touchdowns: <input class="box" type="text" name="completions" id="TDID"></p>
+        <p>Interceptions: <input class="box" type="text" name="completions" id="IntID"></p>
+        <button class="myButton" name="calculate" type="submit" id="myBtn">Calculate</button>
+      </form>
+    </div>
+
+    <div id="container">
+      <span id="NCAASpan"><p id="NCAA">NCAA: </span></p>
+      <span id="NFLSpan"><p id="NFL">NFL:  </span></p>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js\jquery-3.2.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <!-- JavaScript for the page. -->
+    <!--JavaScript for the page. -->
     <script src="js/PRC.js"></script>
-  </body>
+</body>
 </html>

@@ -29,6 +29,10 @@ function calculate() {
     var nfl1 = nfl.toString();
     $("#NCAA").innerHTML = "NCAA: " + ncaa1;
     $("#NFL").innerHTML = "NFL:  " + nfl1;
+    console.log("NCAA: " + ncaa1);
+    console.log("NFL: " + nfl1);
 }
 
-$("#myBtn").click(calculate());
+$(document).ready(function() {
+  $("#myBtn").click(calculate());
+});
