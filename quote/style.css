@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Sedgwick+Ave:400,500);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,500);
+
+body {
+  background-color: #333;
+  color: #000;
+}
+
+.fa-quote-left {
+  font-size: 64px;
+}
+
+.twitter-btn {
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+}
+
+.twitter-btn:hover {
+  color: #ddd;
+}
+
+.btn {
+  font-family: 'Merriweather', serif;
+  border-radius: 5px;
+  background-color: #fff;
+  font-color: #111;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.title{
+  align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 72;
+  text-align: center;
+}
+
+.quote-author {
+    font-family: 'Merriweather', serif;
+    height:auto;
+    clear:both;
+    padding-top:20px;
+    font-size:30px; 
+    text-align:right;
+}
+
+.quote-text {
+    font-family: 'Sedgwick Ave', cursive;
+    text-align:center;
+    width:450px;
+    height:auto;
+    clear:both;
+    font-weight:500;
+    font-size:24px;
+}
+
+.quote-box {
+  border-radius:5px;
+  position:relative;
+  margin:auto auto auto auto;
+  width:450px;
+  padding:40px 50px;
+  display:table;
+  background-color:#666;
+}
