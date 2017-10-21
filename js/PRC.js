@@ -33,6 +33,10 @@ function calculate() {
     console.log("NFL: " + nfl1);
 }
 
+<<<<<<< Updated upstream
 $(document).ready(function() {
+=======
+$(document).onReady(function() {
+>>>>>>> Stashed changes
   $("#myBtn").click(calculate());
 });
