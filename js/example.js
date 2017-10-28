@@ -1,0 +1,51 @@
+"football": {
+	"gameResult": "string",
+	"offensive": {
+		"points": "integer",
+		"passingYards": "integer",
+                "rushingYards": "integer",
+                "totalYards": "integer",
+                "passingPlays": "integer",
+                "rushingPlays": "integer",
+                "totalPlays": "integer",
+                "yardsPerPlay": "float",
+                "fumbles": "integer",
+                "interceptions": "integer",
+                "turnovers": "integer",
+		"rushingTouchdowns": "integer",
+		"passingTouchdowns": "integer",
+                "redZoneAttempts": "integer",
+                "redZoneScores": "integer",
+                "penalties": "integer",
+                "penaltyYards": "integer",
+                "timeOfPossession": "integer"
+	},
+	"defensive": {
+		"pointsAgainst": "integer",
+		"rushingYards": "integer",
+                "passingYards": "integer",
+                "tackles": "integer",
+                "tacklesForLoss": "integer",
+                "sacks": "integer",
+                "forcedFumbles": "integer",
+                "recoveredFumbles": "integer",
+                "passesDefended": "integer",
+                "interceptions": "integer",
+                "safeties": "integer",
+		"rushingTouchdownsAgainst": "integer",
+		"passingTouchdownsAgainst": "integer",
+                "rushingPlays": "integer",
+                "passingPlays": "integer",
+                "totalPlays": "integer"
+	},
+	"specialTeams": {
+		"fieldGoalsAttempted": "integer",
+		"fieldGoalsMade": "integer",
+                "punts": "integer",
+                "puntBlocks": "integer",
+		"puntReturnsForTouchdown": "integer",
+                "kickReturnsForTouchdowns": "integer",
+                "puntReturnYards": "integer",
+                "kickReturnYards": "integer"
+	}
+}
