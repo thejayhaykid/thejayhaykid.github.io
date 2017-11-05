@@ -291,13 +291,13 @@ function setNightSymbolList() {
 
 function switchTemp() {
   var btn = document.getElementById("btn");
-  console.log("In switch");
+  //console.log("In switch");
   if(btn.value == "C") {
-    console.log("C");
+    //console.log("C");
     btn.value = "F";
     setTemp();
   } else {
-    console.log("F");
+    //console.log("F");
     btn.value = "C";
     setC();
   }
