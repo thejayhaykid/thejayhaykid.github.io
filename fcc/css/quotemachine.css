@@ -1,0 +1,28 @@
+/* Universal selectors */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #222222;
+    color: #EEEEEE;
+}
+
+h1 {
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #aaaaaa;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+/* Class selectors */
+.btn {
+  color: #222222;
+}
