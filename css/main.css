@@ -44,6 +44,8 @@ body {
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 
+  animation-name: blurLoad;
+  animation-duration: 2s;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -192,5 +194,22 @@ footer p{
   .mastfoot,
   .cover-container {
     width: 700px;
+  }
+}
+
+@keyframes blurLoad {
+  0% {
+    -webkit-filter: blur(13px);
+   -moz-filter: blur(13px);
+   -o-filter: blur(13px);
+   -ms-filter: blur(13px);
+   filter: blur(13px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+   -moz-filter: blur(0px);
+   -o-filter: blur(0px);
+   -ms-filter: blur(0px);
+   filter: blur(0px);
   }
 }
