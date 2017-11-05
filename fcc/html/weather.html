@@ -11,7 +11,11 @@
     <!-- Bootstrap -->
     <link href="../../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="../css/quotemachine.css" rel="stylesheet">
+    <link href="../css/weather.css" rel="stylesheet">
+
+    <!-- Weather Icons -->
+    <link href="../../css/weather-icons-master/css/weather-icons.min.css" rel="stylesheet">
+    <link href="../../css/weather-icons-master/css/weather-icons-wind.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
@@ -21,7 +25,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- javascript -->
-    <script type="text/javascript" language="javascript" src="../js/quotemachine.js"></script>
+    <script type="text/javascript" language="javascript" src="../js/weather.js"></script>
   </head>
   <body>
     <!--Main Part of the page-->
@@ -30,6 +34,37 @@
         <div class="col-xs-12">
           <h1 class="text-center">Weather</h1>
         </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 loc" id="loc">
+          <h1 class="text-center" id="loc-h1">
+              --
+          </h1>
+        </div>
+      </div>
+        <div class="row">
+            <div class="col-md-12 weather" id="weather">
+                <span id="weather-span">
+                    <h1 class="text-center" id="weather-h1">
+                        <i class="wi wi-na"></i>
+                    </h1>
+                </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 temp" id="temp">
+              <h1 class="text-center" id="temp-h1">
+                  --<i class="wi wi-degrees"></i>F
+              </h1>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 button" id="button">
+            <button class="btn center-block" id="btn" value="F" onclick="switchTemp()">Switch between F & C</button>
+          </div>
       </div>
     </div>
 
