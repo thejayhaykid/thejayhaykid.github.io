@@ -1,5 +1,5 @@
 // Setup global variables
-var ronURL = "http://ron-swanson-quotes.herokuapp.com/v2/quotes";
+var ronURL = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
 var ronObj;
 
 window.onload = function() {
