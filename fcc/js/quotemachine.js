@@ -4,6 +4,7 @@ var ronObj;
 
 window.onload = function() {
     ronClick();
+    //document.getElementById("tweet-btn").addEventListener("click", tweet);
 };
 
 function ronClick() {
@@ -11,7 +12,6 @@ function ronClick() {
     xhr.open('GET', ronURL);
     xhr.onload = function() {
         if (xhr.status === 200) {
-            //      console.log(xhr.responseText);
             ronObj = JSON.parse(xhr.responseText);
             processRon();
         } else {
@@ -43,4 +43,11 @@ function processRon() {
     ronH2.appendChild(breaker);
     ronH2.appendChild(txtNode);
     ronDiv.appendChild(ronH2);
+}
+
+function tweet() {
+  console.log("In tweet");
+  var url = "https://twitter.com/intent/tweet?text=" + ronObj[0] + "&via=freeCodeCamp&hashtags=quote";
+  var win = window.open(url, '_blank');
+  win.focus();
 }
