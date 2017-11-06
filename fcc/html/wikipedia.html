@@ -11,7 +11,7 @@
     <!-- Bootstrap -->
     <link href="../../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="../css/quotemachine.css" rel="stylesheet">
+    <link href="../css/wiki.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- javascript -->
-    <script type="text/javascript" language="javascript" src="../js/quotemachine.js"></script>
+    <script type="text/javascript" language="javascript" src="../js/wiki.js"></script>
 
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109231832-1"></script>
@@ -42,6 +42,24 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <form name="search-form" class="form-inline" id="form" onsubmit="ClearSearch()">
+                    <input id="searchbar" type="search" name="q" size="45" maxlength="255" placeholder="Wikipedia Search" autocomplete="off" autofocus/>
+                    <button class="btn reset-btn form-btn" type="reset" value="reset" id="reset-btn">
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </button>
+                    <button class="btn form-btn" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

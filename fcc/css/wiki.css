@@ -1,0 +1,53 @@
+/* Universal selectors */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #222222;
+    color: #EEEEEE;
+}
+
+h1 {
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #aaaaaa;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+/* Class selectors */
+.btn {
+  background-color: #222222;
+  color: #eeeeee;
+}
+
+input[type="search"] {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    background-color: #222222;
+    border: none;
+    border-bottom: solid 2px #8f8f8f;
+    transition: border 0.3s;
+/*    animation-name: input-load;
+    animation-duration: 3s;*/
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+}
+
+input[type="search"]:focus,
+input[type="search"].focus {
+    border-bottom: solid 2px #ffffff;
+}
+
+input[type="search"]:hover,
+input[type="search"].hover {
+    border-bottom: solid 2px #bbbbbb;
+}
