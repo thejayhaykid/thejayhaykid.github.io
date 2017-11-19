@@ -22,6 +22,11 @@ a:visited {
   color: #ffffff;
 }
 
+form {
+  display: block;
+  text-align: center;
+}
+
 /* Class selectors */
 .btn {
   background-color: #222222;

@@ -1,20 +1,32 @@
 // Setup global variables
-var AM = true;
-var weatherURL = "https://fcc-weather-api.glitch.me/api/current?lat=40&lon=-83";
-var moonURL = "http://api.usno.navy.mil/moon/phase?date=today&nump=1";
-var trivURL = "https://opentdb.com/api.php?amount=1";
-var ronURL = "http://ron-swanson-quotes.herokuapp.com/v2/quotes";
-var jokeURL = "https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev/random_joke";
-var weatherObj, trivObj, jokeObj, ronObj, tempF, weatherSymbol, symbolList, symbolNightList, moonSymbol, moonList, moonObj;
-var curT, sunrise, sunset, weatherDesc;
+var url = "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=";
 
-function ClearSearch() {
-    //console.log("Entered ClearSearch()");
+function search() {
+    console.log("searching...")
     var form = document.forms["search-form"];
     var searchbar = form["q"];
     var query = searchbar.value;
-    var url = "http://www.google.com/search?q=" + query;
-    var win = window.open(url, '_blank');
-    win.focus();
-    form.reset();
+    url += query + "&format=json";
+    var xhr = new XMLHttpRequest();
+    console.log("XHR made");
+    xhr.open('GET', "http://ron-swanson-quotes.herokuapp.com/v2/quotes");
+    console.log("Get made");
+    xhr.send();
+    console.log("Sent");
+    xhr.onload = function() {
+      console.log("onload");
+      if (xhr.status === 200) {
+        console.log("Good return");
+        var userInfo = JSON.parse(xhr.responseText);
+        setResults(userInfo);
+      }
+      else {
+        alert('Request failed.  Returned status of ' + xhr.status);
+      }
+    };
+    xhr.send();
+}
+
+function setResults(results) {
+  console.log(JSON.stringify(results));
 }
