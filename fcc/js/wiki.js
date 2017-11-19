@@ -1,32 +1,26 @@
 // Setup global variables
-var url = "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=";
+var searchURL = "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=";
+var ronURL = "http://ron-swanson-quotes.herokuapp.com/v2/quotes";
 
 function search() {
     console.log("searching...")
     var form = document.forms["search-form"];
     var searchbar = form["q"];
     var query = searchbar.value;
-    url += query + "&format=json";
+    searchURL += query + "&format=json";
     var xhr = new XMLHttpRequest();
-    console.log("XHR made");
-    xhr.open('GET', "http://ron-swanson-quotes.herokuapp.com/v2/quotes");
-    console.log("Get made");
-    xhr.send();
-    console.log("Sent");
+    xhr.open('GET', searchURL, true);
     xhr.onload = function() {
-      console.log("onload");
-      if (xhr.status === 200) {
-        console.log("Good return");
-        var userInfo = JSON.parse(xhr.responseText);
-        setResults(userInfo);
-      }
-      else {
-        alert('Request failed.  Returned status of ' + xhr.status);
-      }
+        if (xhr.status === 200) {
+            setResults(JSON.parse(xhr.responseText));
+        } else {
+            console.log('Request failed. Returned ' + xhr.status);
+        }
     };
     xhr.send();
+    console.log("Sent");
 }
 
 function setResults(results) {
-  console.log(JSON.stringify(results));
+  console.log(results);
 }
