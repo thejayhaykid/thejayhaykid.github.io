@@ -30,7 +30,7 @@ div:nth-child(2){
 }
 
 div:nth-child(3){
-    height: 400px;
+    height: 75vh;
     background-image: url(../images/RuleOfThirdsEdit.jpg);
     background-attachment: fixed;
     background-size: cover;
