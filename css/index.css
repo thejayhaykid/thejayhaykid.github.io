@@ -15,9 +15,17 @@ div {
 
 h2 {
     font-size: 60px;
-    background: #eee;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #ffffff;
     padding: 8px 24px;
     border-radius: 16px;
+}
+
+.btn-dark{
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 div:nth-child(1){
